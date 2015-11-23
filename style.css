@@ -430,6 +430,11 @@ a:active {
 .site-header hgroup {
 	background: #33605a;
 	padding: 1.5em 2em;
+	position: fixed;
+	z-index: 200;
+	width: 100%;
+	box-shadow: 5px -8px 15px 7px;
+	top:0;
 }
 .site-title {
 	font-size: 45px;
@@ -451,7 +456,8 @@ a:active {
 .main-navigation {
     clear: both;
     display: block;
-    padding: 1.5em;
+    padding: 10em 0 1.5em 3.5em;
+    width:100%;
 }
 .main-navigation:after {
 	clear: both;
@@ -515,6 +521,7 @@ a:active {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    padding-top: 125px;
 }
 .main-small-navigation .menu {
 	display: none;

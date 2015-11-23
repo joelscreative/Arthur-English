@@ -38,6 +38,11 @@
 		echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );
 
 	?></title>
+
+	<!-- GOOGLE FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico|Patua+One|Ultra|Maiden+Orange' rel='stylesheet' type='text/css'>
+	<!-- GOOGLE FONTS END -->
+	
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
