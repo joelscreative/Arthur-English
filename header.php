@@ -40,7 +40,7 @@
 	?></title>
 
 	<!-- GOOGLE FONTS -->
-	<link href='https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico|Patua+One|Ultra|Maiden+Orange' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Bree+Serif|Patua+One|Ultra|Maiden+Orange|Kreon:400,300,700|' rel='stylesheet' type='text/css'>
 	<!-- GOOGLE FONTS END -->
 	
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -57,8 +57,19 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<h1 class="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<!-- <div id="mark">mark</div> -->	
+			<h1 class="site-title">
+				<img class="mark" src="/arthurenglish/wp-content/themes/Arthur/images/arthurLOGOMARK2_FINAL.svg") no-repeat>
+				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+			</h1>
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+
+			<ul class="social">
+				<li><?php echo do_shortcode("[wp-svg-icons icon=mail-4 wrap=li]"); ?></li>
+				<li><?php echo do_shortcode("[wp-svg-icons icon=facebook-3 wrap=li]"); ?></li>
+				<li><?php echo do_shortcode("[wp-svg-icons icon=twitter-3 wrap=li]"); ?></li>
+			</ul>
+
 		</hgroup>
 
 		<?php $header_image = get_header_image();
@@ -77,7 +88,11 @@
 	</header><!-- #masthead .site-header -->
 
 <!-- 	METASLIDER -->
-	<?php 
-    echo do_shortcode("[metaslider id=6]"); 
-	?>
+
+    
+    <?php 
+    echo do_shortcode("[metaslider id=6 restrict_to=home]");?>
+
 	<div id="main" class="site-main">
+
+

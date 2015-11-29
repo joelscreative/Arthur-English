@@ -1,13 +1,13 @@
 /*
-Theme Name: Shape 2
-Theme URI: http://themeshaper.com/
-Author: ThemeShaper
-Author URI: http://themeshaper.com/
-Description: The Shape theme is a simple, minimalist theme based on Underscores and the original Shape Theme by Ian Stewart. It was created especially as a learning theme for The Theme Shaper WordPress Theme Tutorial: 2nd Edition.
+Theme Name: Arthur
+Theme URI: http://www.joelps.com/arthurenglish/
+Author: JoelPS
+Author URI: http://www.joelps.com/
+Description: The Arthur Theme was based on the Underscores and the original Shape Theme by Ian Stewart. It was created especially as a learning theme for Joel Schmidt at joelps.com.
 Version: 2.0
 License: GNU General Public License
 License URI: license.txt
-Tags: brown, green, light, tan, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, featured-images, flexible-header, microformats, post-formats, rtl-language-support, threaded-comments, translation-ready
+Tags: brown, green, light, tan, one-column, two-columns, left-sidebar, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, featured-images, flexible-header, microformats, post-formats, rtl-language-support, threaded-comments, translation-ready, joel, joelps, designer, english
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
@@ -34,9 +34,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
-	margin: 0;
+	margin: 0px;
 	outline: 0;
-	padding: 0;
+	padding: 0px;
 	vertical-align: baseline;
 }
 html {
@@ -106,7 +106,7 @@ textarea {
 }
 
 body {
-	background: #e9e0d1;
+	background: #FFF;
 }
 
 /* Headings */
@@ -118,6 +118,7 @@ h1 {
 	font-size: 36px;
 	font-size: 3.6rem;
 }
+
 h2 {
 	font-size: 28px;
 	font-size: 2.8rem;
@@ -331,7 +332,7 @@ textarea {
 /* Links */
 a,
 a:visited {
-	color: #748a81;
+	color: #478078;
 	text-decoration: none;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
@@ -422,33 +423,102 @@ a:active {
 .site-footer {
 	clear: both;
 	width: 100%;
+	background-color: grey;
+	color: black;
+}
+
+.site-footer a, a:visited {
+
+	color: white;
 }
 
 /* =Site Header
 ----------------------------------------------- */
 
 .site-header hgroup {
-	background: #33605a;
+	background: rgba(179,235,227,1);
+	background: -moz-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(179,235,227,1)), color-stop(100%, rgba(104,191,179,1)));
+	background: -webkit-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
+	background: -o-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
+	background: -ms-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
+	background: linear-gradient(to bottom, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ebe3', endColorstr='#68bfb3', GradientType=0 );
 	padding: 1.5em 2em;
 	position: fixed;
 	z-index: 200;
 	width: 100%;
-	box-shadow: 5px -8px 15px 7px;
+	box-shadow: 2px -7px 9px 6px #AFAFAF;
 	top:0;
 }
+
 .site-title {
 	font-size: 45px;
 	font-size: 4.5rem;
-	font-style: italic;
+	/*font-style: italic;*/
+	font-family: 'Maiden Orange', cursive;
+	display: inline-block;
+	height: 0;
 }
 .site-description {
-	font-size: 13px;
-	font-size: 1.3rem;	
+	font-size: 15px;
+	font-size: 1.5rem;	
+	display: inline-block;
+	padding-left: 10px;
+	font-family: 'Kreon', sans-serif;
 }
 .site-title a,
 .site-description {
-	color: #e9e0d1;
+	color: #FFF;
+	text-shadow:1px 1px 1px #b3b3b3;
 }
+
+.mark {
+	height: auto; 
+    width: auto; 
+    max-width: 50px; 
+    max-height: 50px;
+    margin:0;
+    padding:0;
+	/*width: 150px;
+	height: auto;
+	background: url('/arthurenglish/wp-content/themes/Arthur/images/arthurLOGOMARK2_FINAL.png') no-repeat;
+  	background-size:contain;
+  	display: inline-block;
+  	text-indent: -3000px;*/
+  	-webkit-filter: drop-shadow( 1px 1px 1px #b3b3b3 );
+            filter: drop-shadow( 1px 1px 1px #b3b3b3 ); /* Same syntax as box-shadow */
+}
+
+.social {
+
+	float: right;
+    display: inline-block;
+    list-style-type: none;
+    width: 30%;
+    /* height: 100px; */
+    font-size: 1em;
+    margin: 0 50px 0 0;
+    padding-top: 12px;
+}
+
+.social li{
+
+	float: right;
+    display: inline-block;
+    list-style-type: none;
+    width: auto;
+    /* height: 100px; */
+    font-size: 2em;
+    color: #FFF;
+    /* position: absolute; */
+    /* right: 16px; */
+    padding: 0 25px;
+    text-shadow:1px 1px 1px #b3b3b3;
+}
+
+
+
 
 /* =Menu
 ----------------------------------------------- */
@@ -456,7 +526,7 @@ a:active {
 .main-navigation {
     clear: both;
     display: block;
-    padding: 10em 0 1.5em 3.5em;
+    padding: 6em 0 1.5em 3.5em;
     width:100%;
 }
 .main-navigation:after {
@@ -475,7 +545,7 @@ a:active {
 	position: relative;
 }
 .main-navigation a {
-	color: #7c948a;
+	color: #68BFB3;
     display: block;
     font-size: 1.4rem;
     font-weight: bold;
@@ -483,14 +553,15 @@ a:active {
     text-decoration: none;
 }
 .main-navigation ul ul {
-	background: #e9e0d1;
-	border: 1px solid rgba( 0, 0, 0, 0.1 );
+	background: #FFF;
+	/* border: 1px solid rgba( 0, 0, 0, 0.1 ); */
 	display: none;
 	float: left;
 	position: absolute;
-		top: 1.2em;
-		left: 0;
+	top: 1.2em;
+	left: 0;
 	z-index: 99999;
+	/*box-shadow: 5px 5px 5px 5px grey;*/
 }
 .main-navigation ul ul ul {
 	left: 100%;
@@ -506,7 +577,7 @@ a:active {
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a,
 .main-navigation ul ul a:hover {
-	color: #33605a;
+	color: #45827A;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -514,18 +585,71 @@ a:active {
 	display: block;
 }
 
+.sub-menu a {
+	color: #68BFB3;
+}
+
+.sub-menu a:hover {
+	color: #45827A;
+}
+
 /* Small menu */
 .menu-toggle {
+	margin:0;
 	color: #7c948a;
    	cursor: pointer;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    padding-top: 125px;
+    padding-top: 130px;
+    padding-bottom:20px;
 }
+
 .main-small-navigation .menu {
 	display: none;
+	list-style-type: none;
+	background-color: #BFC1E8;
+	text-align: center;
+	width: 100%;
+	padding: 0px;
+	margin: 0;
 }
+
+.main-small-navigation .menu a {
+
+/*	background-color: #B2603D;*/
+	color:#FFF;
+	font-weight: bold;
+
+/*	text-align:center;*/
+/*	width: 100%;*/
+/*	margin:0;*/
+/*	padding:20px;*/
+}
+
+.main-small-navigation .menu ul {
+
+	background-color: #DCDEFD;
+	text-align:center;
+	width: 100%;
+	margin:0;
+	padding:20px 0 20px 0;
+	list-style-type: none;
+	box-shadow: 2px 13px 18px -17px #9A9A9A inset;
+}
+
+.main-small-navigation .menu li{
+	padding:8px;
+
+}
+
+.main-small-navigation li:hover > a,
+.main-small-navigation li.current_page_item a, 
+.main-small-navigation li.current-menu-item a,
+.main-small-navigation ul ul a:hover {
+
+	color: #A69FB3;
+/* background-color: blue; */list-style-type: none;}
 
 
 /* =Content
@@ -547,9 +671,12 @@ a:active {
 .page-title {
 	font-size: 28px;
     font-size: 2.8rem;
-	font-style: italic;
+	/*	font-style: italic;*/
 	margin: 0 0 0.2em;
+	font-family: 'Kreon', serif;
+	font-weight: 700;
 }
+
 .entry-title a {
 	text-decoration: none;
 }
@@ -873,10 +1000,40 @@ p.nocomments {
 	#tertiary {
 		width: 100%;
 	}
-	.site-header hgroup,
+	
 	#main {
 		padding: 0.8em;
+		
+
 	}
+
+	.site-header hgroup {
+		text-align: center;
+		margin:0;
+		padding:20px 0 20px 0;
+	}
+
+	.social {
+
+	display: inline-block;
+    list-style-type: none;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    margin: 16px auto;
+    height: 24px;
+    padding: 0;
+
+}
+
+	.social li{
+
+	width: 20%;
+    margin: 0 auto;
+    display: inline-block;
+
+	}
+
 }
 
 
@@ -891,3 +1048,4 @@ p.nocomments {
 #ie8 .wp-caption img {
 	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
 }
+

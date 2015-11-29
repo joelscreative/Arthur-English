@@ -1,0 +1,522 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"size",
+				"font-size"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"rea",
+				"repeat-x"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"al",
+				"vertical-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "sftp-config.json",
+			"settings":
+			{
+				"buffer_size": 1396,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 19201,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 3082,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 853,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/node.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Project: Add Folder"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Joel/Desktop/Projects/Arthur/footer.php",
+		"/Users/Joel/Desktop/Projects/Arthur/header.php",
+		"/Users/Joel/Desktop/Projects/Arthur/style.css",
+		"/Users/Joel/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/joelArthurFTP",
+		"/Users/Joel/Desktop/Projects/Arthur3/header.php",
+		"/Users/Joel/Desktop/plugin.php",
+		"/Users/Joel/Desktop/Projects/Arthur3/plugins/nivoplugin.php",
+		"/Users/Joel/Desktop/Projects/Arthur3/plugins/script.js",
+		"/Users/Joel/Desktop/Projects/Arthur3/functions.php",
+		"/Users/Joel/Desktop/Projects/PageTransitions/css/component.css",
+		"/Users/Joel/Desktop/Projects/PageTransitions/index2.html",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/arthur2.sublime-project",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/arthur2.sublime-workspace",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/style2.css",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/header2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/functions2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/index2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/sidebar2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/footer2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/tweaks.php",
+		"/Users/Joel/Desktop/Projects/Arthur/Arthur2/template-tags.php",
+		"/Users/Joel/Desktop/Projects/Arthur/footer2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/sidebar2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/index2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/functions2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/header2.php",
+		"/Users/Joel/Desktop/Projects/Arthur/template-tags.php",
+		"/Users/Joel/Desktop/Projects/Arthur/tweaks.php",
+		"/Users/Joel/Desktop/Projects/Arthur/functions.php",
+		"/Users/Joel/Desktop/Projects/Arthur/jquery.min.js",
+		"/Users/Joel/Desktop/Projects/Arthur/sidebar.php",
+		"/Users/Joel/Desktop/Projects/Arthur/index.php",
+		"/Users/Joel/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/untitled",
+		"/Users/Joel/Desktop/Projects/navExperiments/style.css",
+		"/Users/Joel/Desktop/Projects/navExperiments/nav1.html",
+		"/Users/Joel/Library/Application Support/Sublime Text 2/Packages/SFTP/Default (OSX).sublime-keymap",
+		"/Users/Joel/Desktop/Projects/Arthur/sftp-config.json",
+		"/Users/Joel/Desktop/Projects/Arthur/arthur.sublime-project",
+		"/Users/Joel/Desktop/JoelPS/Arthur/footer.php",
+		"/Users/Joel/Desktop/JoelPS/Arthur/sidebar.php",
+		"/Users/Joel/Desktop/JoelPS/Arthur/index.php",
+		"/Users/Joel/Desktop/Projects/JoelPS/about.html",
+		"/Users/Joel/Desktop/JoelPS/Arthur/header.php",
+		"/Users/Joel/Library/Application Support/Sublime Text 2/Packages/User/node.sublime-build",
+		"/Users/Joel/Desktop/JAVASCRIPT/codeacademy.js",
+		"/Users/Joel/Desktop/JAVASCRIPT/practice.js",
+		"/Users/Joel/Desktop/JAVASCRIPT/rockpaper.js",
+		"/Users/Joel/Desktop/JAVASCRIPT/index.html",
+		"/Users/Joel/GitHub/ABC/index.html",
+		"/Users/Joel/Desktop/JoelPS/index.html",
+		"/Users/Joel/Desktop/JoelPS/assets/css/bootstrap.css",
+		"/Users/Joel/Desktop/JoelPS/assets/css/style.css",
+		"/Users/Joel/Desktop/JoelPS/ami.html",
+		"/Users/Joel/Desktop/JoelPS/JPS_PORTFOLIO.sublime-workspace",
+		"/Users/Joel/Desktop/JoelPS/JPS_PORTFOLIO.sublime-project",
+		"/Users/Joel/Desktop/HTML/index.html",
+		"/Users/Joel/Desktop/HTML/style.css",
+		"/Users/Joel/Desktop/JoelPS/assets/js/parallax.js",
+		"/Users/Joel/Desktop/JoelPS/rubyred.html",
+		"/Users/Joel/Desktop/JoelPS/EC.html",
+		"/Users/Joel/Desktop/JoelPS/assets/css/font-awesome.min.css",
+		"/Users/Joel/Desktop/JoelPS/about.html",
+		"/Users/Joel/Desktop/JoelPS/ABC.html",
+		"/Users/Joel/Desktop/JoelPS/indexold.html",
+		"/Users/Joel/Desktop/JoelPS/assets/css/stylecopy.css",
+		"/Users/Joel/Desktop/JoelPS/work.html",
+		"/Users/Joel/Desktop/JoelPS/indexcopy.html",
+		"/Users/Joel/Desktop/JoelPS/assets/js/magnific.js",
+		"/Users/Joel/Desktop/JoelPS/parallax.html",
+		"/Users/Joel/Desktop/SITE BACKUP/www/ami/index.html",
+		"/Users/Joel/Desktop/SITE BACKUP/www/ami/styles/main.css",
+		"/Users/Joel/Desktop/JoelPS/index copy.html",
+		"/Users/Joel/Desktop/JoelPS/assets/css/style copy.css",
+		"/Users/Joel/Desktop/JoelPS/assets/js/bootstrap.min.js",
+		"/Users/Joel/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Joel/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"box-shadow",
+			"current_page_item",
+			"menu",
+			"underline",
+			"current_page_item",
+			"header",
+			"box-shadow",
+			"body",
+			"a, a:visited",
+			".site-header hgroup",
+			"@media",
+			"menu",
+			"@media",
+			"@meida",
+			"615",
+			"box-shadow",
+			"main-navigation",
+			".site-header",
+			"masthead",
+			"hgroup",
+			"italic",
+			"Automattic",
+			"np_init",
+			"my_menu",
+			"style",
+			".jpg",
+			"col-lg-4 col-md-4 col-sm-4 gallery",
+			"width: 33.33333333%",
+			"33.33333333%",
+			"left",
+			"hover",
+			"16a085",
+			"#16a085",
+			"270px",
+			"font",
+			"30px",
+			"col-lg-2",
+			"h1",
+			"works",
+			"h2",
+			".social",
+			"row",
+			"row centered",
+			"footer",
+			".wrapper-",
+			"mb",
+			"916",
+			"960",
+			"social",
+			"body",
+			"p",
+			"h4",
+			"DESIGNER",
+			"30px",
+			"row centered",
+			"h4",
+			"col-lg-2",
+			"container",
+			".container",
+			"navbar",
+			".container",
+			"44",
+			"col-lg-2",
+			"@media",
+			"footerwrap",
+			"@",
+			"wrapper-parallax",
+			"300",
+			".container",
+			"250",
+			".content",
+			"footer",
+			"@media footer",
+			".navbar-toggle",
+			"@media",
+			"footer",
+			"col-lg-6 col-lg-offset-3",
+			"col-lg-2",
+			"col-lg-2col-lg-6 col-lg-offset-3",
+			"col-lg-2",
+			"16.66666667%",
+			"col-lg-2",
+			".col-lg-2",
+			"24.666667",
+			"row",
+			"row centered",
+			".i",
+			"a {",
+			"row center"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "sftp-config.json",
+					"settings":
+					{
+						"buffer_size": 1396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								496,
+								528
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 19201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19201,
+								19201
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 20772.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "header.php",
+					"settings":
+					{
+						"buffer_size": 3082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1983,
+								1983
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1145.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "footer.php",
+					"settings":
+					{
+						"buffer_size": 853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								698,
+								698
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 4.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.sftp":
+	{
+		"height": 142.0
+	},
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
