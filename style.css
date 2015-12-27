@@ -21,6 +21,11 @@ and Blueprint http://www.blueprintcss.org/
 /* =Reset
 -------------------------------------------------------------- */
 
+/** {
+
+	background-color: rgba(193, 66, 66, 0.32);
+}*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -113,7 +118,42 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
 	margin: 0.6em 0;
+	font-family: sans-serif;
 }
+
+.classes h1, h2, h3, h4 {
+	text-align: center;
+}
+
+.classes li {
+	list-style-type: none;
+	display:inline-block;
+	text-align: center;
+	margin: 10px;
+}
+
+.classes a:visited{
+	color:#B3EBE3;
+}
+
+.classes a:hover{
+	color:#FFF;
+	background-color: #B3EBE3;
+}
+
+.classes a {
+	/*CHANGE FOR HOVER*/
+	background-color: #FFF;
+	/*margin: 10px;*/
+	height:auto;
+	/*color:#B3EBE3; */
+	border-radius: 20px;
+	padding:10px;
+	transition: background-color 0.5s ease;
+	/*CHANGE FOR HOVER*/
+	height:100%;
+}
+
 h1 {
 	font-size: 36px;
 	font-size: 3.6rem;
@@ -149,7 +189,19 @@ hr {
 /* Text elements */
 p {
 	margin-bottom: 1.5em;
+	font-family: sans-serif;
+	/*text-align: left;*/
 }
+
+.contentp {
+	width: 100%;
+    display: block;
+    height: 100%;
+    margin-top: 20px;
+    padding-top: 0;
+    float: left;
+}
+
 ul, ol {
 	margin: 0 0 1.5em 3em;
 }
@@ -230,6 +282,7 @@ figure {
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
+	font-family: sans-serif;
 }
 th {
 	font-weight: bold;
@@ -312,7 +365,7 @@ input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly i
 input[type=text],
 input[type=email],
 textarea {
-	background: rgba( 255, 255, 255, 0.3 );
+	background: rgba( 255, 255, 255, 0.6 );
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	padding: 6px;
@@ -346,10 +399,10 @@ a:active {
 
 /* Alignment */
 .alignleft {
-	display: inline;
+	display: inline-block;
 	float: left;
-	margin-right: 1.5em;
-	margin-bottom: 1em;
+	/* margin-right: 1.5em; */
+	/* margin-bottom: 1em; */
 }
 .alignright {
 	display: inline;
@@ -398,6 +451,8 @@ a:active {
 #main {
 	clear: both;
     overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 #primary {
 	float: left;
@@ -410,12 +465,13 @@ a:active {
 }
 #secondary,
 #tertiary {
-	background: #ede8df;
+	background: #F7F1E7;
    	float: right;
    	margin: 1em 1em 0;
     padding: 2em 2em 0;
     position: relative;
     width: 20%;
+
 }
 #tertiary {
 	padding-top: 0;
@@ -423,13 +479,20 @@ a:active {
 .site-footer {
 	clear: both;
 	width: 100%;
-	background-color: grey;
 	color: black;
+	background: rgba(128,128,128,1);
+	background: -moz-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(128,128,128,1)), color-stop(100%, rgba(71,71,71,1)));
+	background: -webkit-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
+	background: -o-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
+	background: -ms-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
+	background: linear-gradient(to bottom, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#474747', GradientType=0 );
 }
 
 .site-footer a, a:visited {
 
-	color: white;
+	color: #68BFB3;
 }
 
 /* =Site Header
@@ -444,12 +507,13 @@ a:active {
 	background: -ms-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
 	background: linear-gradient(to bottom, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ebe3', endColorstr='#68bfb3', GradientType=0 );
-	padding: 1.5em 2em;
+	padding: 1em 2em;
 	position: fixed;
 	z-index: 200;
 	width: 100%;
 	box-shadow: 2px -7px 9px 6px #AFAFAF;
 	top:0;
+	height:50px;
 }
 
 .site-title {
@@ -458,7 +522,9 @@ a:active {
 	/*font-style: italic;*/
 	font-family: 'Maiden Orange', cursive;
 	display: inline-block;
-	height: 0;
+	height: 64px;
+	padding: 0;
+	margin: 0;
 }
 .site-description {
 	font-size: 15px;
@@ -471,6 +537,9 @@ a:active {
 .site-description {
 	color: #FFF;
 	text-shadow:1px 1px 1px #b3b3b3;
+	margin: 0;
+	padding:0
+	
 }
 
 .mark {
@@ -495,7 +564,7 @@ a:active {
 	float: right;
     display: inline-block;
     list-style-type: none;
-    width: 30%;
+    width: 35%;
     /* height: 100px; */
     font-size: 1em;
     margin: 0 50px 0 0;
@@ -513,11 +582,21 @@ a:active {
     color: #FFF;
     /* position: absolute; */
     /* right: 16px; */
-    padding: 0 25px;
-    text-shadow:1px 1px 1px #b3b3b3;
+    padding: 0 20px;
+    
 }
 
+.icon {
 
+	color:#FFF;
+	text-shadow:1px 1px 1px #b3b3b3;
+}
+
+.icon:hover {
+	color:#68BFB3;
+	text-shadow:none;
+
+}
 
 
 /* =Menu
@@ -526,7 +605,7 @@ a:active {
 .main-navigation {
     clear: both;
     display: block;
-    padding: 6em 0 1.5em 3.5em;
+    padding: 6em 0 1em 3.5em;
     width:100%;
 }
 .main-navigation:after {
@@ -551,9 +630,12 @@ a:active {
     font-weight: bold;
     margin-right: 2em;
     text-decoration: none;
+    height:100%;
 }
+
 .main-navigation ul ul {
-	background: #FFF;
+	/*background-image: url("http://joelps.com/arthurenglish/wp-content/themes/Arthur/images/ricepaper_v3.png");*/
+	background: #efe7e3;
 	/* border: 1px solid rgba( 0, 0, 0, 0.1 ); */
 	display: none;
 	float: left;
@@ -561,8 +643,10 @@ a:active {
 	top: 1.2em;
 	left: 0;
 	z-index: 99999;
-	/*box-shadow: 5px 5px 5px 5px grey;*/
+	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+	background-repeat: repeat;
 }
+
 .main-navigation ul ul ul {
 	left: 100%;
 	top: 0;
@@ -601,8 +685,8 @@ a:active {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    padding-top: 130px;
-    padding-bottom:20px;
+    padding-top: 120px;
+    padding-bottom:30px;
 }
 
 .main-small-navigation .menu {
@@ -656,12 +740,61 @@ a:active {
 ----------------------------------------------- */
 
 .site-main {
-    background: #f1ece3;
+    background: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-width: 3px 1px;
 }
 .sticky {
 }
+
+.classes {
+	border-radius: 5px;
+	display: inline-block;
+	padding: 20px;
+	font-weight: bold;
+	font-family: sans-serif;
+	width: 100%;
+}
+
+.classeslist {
+	text-align: center;
+	margin:0 auto;
+}
+
+
+.adult{
+	background-color: #66ccff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    background-image: url("http://www.kevinsenglishhouse.com/images/img07.jpg");
+    background-size:cover;
+    color: #FFF;
+    box-shadow: 10px 10px 50px 130px rgba(0,0,0,0.3) inset;
+}
+
+.kids{
+	background-color: #65cc00;
+	border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    background-image: url("https://www.britishcouncil.jp/sites/default/files/styles/bc-landscape-630x354/public/tc-yl-2015img_0.jpg?itok=1zpjFr3u");
+    background-size:cover;
+    color: #FFF;
+    box-shadow: 10px 10px 50px 130px rgba(0,0,0,0.3) inset;
+}
+
+.skype{
+	background-color: #65cc00;
+	border-radius: 10px;
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    background-image: url("http://www.hillstanbul.com/wp-content/uploads/2015/02/woman-with-headset.jpg");
+    background-size:cover;
+    color: #FFF;
+    box-shadow: 10px 10px 50px 130px rgba(0,0,0,0.3) inset;
+} 
+
 .hentry {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 	margin: 0 0 1.5em;
@@ -752,13 +885,22 @@ body.archive .page-title {
 .widget img {
 	max-width: 100%; /* Fluid images for posts, comments, and widgets */
 }
+
+.entry-content img{
+	width:100%;
+	border-radius: 5px;
+	padding: 22px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
 .site-header img,
 .entry-content img,
 .widget-img,
 img[class*="align"],
 img[class*="wp-image-"],
 .wp-caption img {
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	height: auto;/* Make sure images with WordPress-added height and width attributes are scaled correctly */
 }
 .site-header img,
 .entry-content img,
@@ -774,6 +916,14 @@ img.size-full {
 	margin-top: 0;
 	padding: 0;
 }
+
+#contentimagewrapper{
+width:100%;
+text-align: center;
+margin:0 auto;
+height: auto;
+}
+
 .wp-caption {
 	border: 1px solid #ccc;
 	max-width: 100%;
@@ -958,7 +1108,8 @@ p.nocomments {
 	color: #999;
 	font-size: 20px;
 	font-size: 2rem;
-	font-style: italic;
+	/*font-style: italic;*/
+	font-family: 'Kreon', sans-serif;
 }
 
 /* Search widget */
@@ -1003,14 +1154,20 @@ p.nocomments {
 	
 	#main {
 		padding: 0.8em;
-		
-
+		/* margin-right: 12%; */
 	}
 
 	.site-header hgroup {
 		text-align: center;
-		margin:0;
+		margin:0 auto;
 		padding:20px 0 20px 0;
+		width: 100%;
+		height:45px;
+	}
+
+	.site-description{
+		display: none;
+
 	}
 
 	.social {
@@ -1020,18 +1177,27 @@ p.nocomments {
     width: 100%;
     font-size: 1em;
     text-align: center;
-    margin: 16px auto;
+    margin: 0 auto;
     height: 24px;
     padding: 0;
-
-}
+	background-color: rgba(201,201,201,.4);height: 100%;position: static;/* top: 26px; */
+	float: none;
+	}
 
 	.social li{
 
-	width: 20%;
-    margin: 0 auto;
-    display: inline-block;
+	width: 19%;
+	float:none;
+    /* margin: 0 auto; */
+    /* display: inline-block; */
+	}
 
+	.main-navigation {
+
+		padding-top: 6em;
+	}
+	.menu-toggle{
+		    padding-top: 180px;
 	}
 
 }

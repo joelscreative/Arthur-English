@@ -65,9 +65,9 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 
 			<ul class="social">
-				<li><?php echo do_shortcode("[wp-svg-icons icon=mail-4 wrap=li]"); ?></li>
-				<li><?php echo do_shortcode("[wp-svg-icons icon=facebook-3 wrap=li]"); ?></li>
-				<li><?php echo do_shortcode("[wp-svg-icons icon=twitter-3 wrap=li]"); ?></li>
+				<li><a href="mailto:info@nihon-arthur.com"><span class="icon"><?php echo do_shortcode("[wp-svg-icons icon=mail-4 wrap=span]"); ?></span></a></li>
+				<li><a href="https://www.facebook.com/arthur.cskysh"><span class="icon"><?php echo do_shortcode("[wp-svg-icons icon=facebook-3 wrap=span]"); ?></span></a></li>
+				<li><a href="https://www.twitter.com"><span class="icon"><?php echo do_shortcode("[wp-svg-icons icon=twitter-3 wrap=span]"); ?></span></a></li>
 			</ul>
 
 		</hgroup>
