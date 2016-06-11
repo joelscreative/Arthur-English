@@ -22,7 +22,6 @@ and Blueprint http://www.blueprintcss.org/
 -------------------------------------------------------------- */
 
 /** {
-
 	background-color: rgba(193, 66, 66, 0.32);
 }*/
 
@@ -103,7 +102,7 @@ button,
 input,
 select,
 textarea {
-	color: #6b6252;	
+	color: #6b6252;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	font-size: 1.6rem;
@@ -385,7 +384,7 @@ textarea {
 /* Links */
 a,
 a:visited {
-	color: #478078;
+	color: #00B9F2;
 	text-decoration: none;
 	transition: all .3s ease-in-out;
 	-webkit-transition: all .3s ease-in-out;
@@ -453,7 +452,10 @@ a:active {
     overflow: hidden;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    margin: 0 auto;
+    /*margin-top: 100px;*/
 }
+
 #primary {
 	float: left;
 	margin: 0 -27% 0 0;
@@ -465,7 +467,7 @@ a:active {
 }
 #secondary,
 #tertiary {
-	background: #F7F1E7;
+	background: #f8f4ee;
    	float: right;
    	margin: 1em 1em 0;
     padding: 2em 2em 0;
@@ -480,19 +482,20 @@ a:active {
 	clear: both;
 	width: 100%;
 	color: black;
-	background: rgba(128,128,128,1);
+	background-color:#19B97F ;
+	/*background: rgba(128,128,128,1);
 	background: -moz-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(128,128,128,1)), color-stop(100%, rgba(71,71,71,1)));
 	background: -webkit-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
 	background: -o-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
 	background: -ms-linear-gradient(top, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
 	background: linear-gradient(to bottom, rgba(128,128,128,1) 0%, rgba(71,71,71,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#474747', GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#808080', endColorstr='#474747', GradientType=0 );*/
 }
 
-.site-footer a, a:visited {
-
-	color: #68BFB3;
+.site-footer a, a:visited { 
+	color:#00B9F2;
+	text-decoration: underline;
 }
 
 /* =Site Header
@@ -505,7 +508,7 @@ a:active {
 	background: -webkit-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
 	background: -o-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
 	background: -ms-linear-gradient(top, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
-	background: linear-gradient(to bottom, rgba(179,235,227,1) 0%, rgba(104,191,179,1) 100%);
+	background: #FFF;
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3ebe3', endColorstr='#68bfb3', GradientType=0 );
 	padding: 1em 2em;
 	position: fixed;
@@ -521,55 +524,75 @@ a:active {
 	font-size: 4.5rem;
 	/*font-style: italic;*/
 	font-family: 'Maiden Orange', cursive;
-	display: inline-block;
 	height: 64px;
 	padding: 0;
 	margin: 0;
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	width: auto;
 }
 .site-description {
 	font-size: 15px;
-	font-size: 1.5rem;	
-	display: inline-block;
+	font-size: 1.5rem;
 	padding-left: 10px;
 	font-family: 'Kreon', sans-serif;
+	padding-left: 10px;
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	width: auto;
 }
 .site-title a,
 .site-description {
-	color: #FFF;
-	text-shadow:1px 1px 1px #b3b3b3;
+	color: #19B97F;
+	/* text-shadow:1px 1px 1px #b3b3b3; */
 	margin: 0;
-	padding:0
-	
+	/* padding:0; */
+	width: auto;
+	height: 100%;
+	display: inline-block;
 }
 
 .mark {
-	height: auto; 
+	height: 100%; 
     width: auto; 
-    max-width: 50px; 
-    max-height: 50px;
+    max-width: 60px; 
+    max-height: 40px;
     margin:0;
     padding:0;
+    display: inline-block;
+    -webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
 	/*width: 150px;
 	height: auto;
 	background: url('/arthurenglish/wp-content/themes/Arthur/images/arthurLOGOMARK2_FINAL.png') no-repeat;
   	background-size:contain;
   	display: inline-block;
   	text-indent: -3000px;*/
-  	-webkit-filter: drop-shadow( 1px 1px 1px #b3b3b3 );
-            filter: drop-shadow( 1px 1px 1px #b3b3b3 ); /* Same syntax as box-shadow */
+  	/*-webkit-filter: drop-shadow( 1px 1px 1px #b3b3b3 );
+            filter: drop-shadow( 1px 1px 1px #b3b3b3 ); /* Same syntax as box-shadow */*/
+}
+
+.mark:hover {
+
+	-webkit-transform: rotate(-10deg);
+	transform: rotate(-10deg);
 }
 
 .social {
-
-	float: right;
+    float: right;
     display: inline-block;
     list-style-type: none;
-    width: 35%;
+    width: 220px;
     /* height: 100px; */
     font-size: 1em;
     margin: 0 50px 0 0;
     padding-top: 12px;
-}
+    /* clear: both; */
+    }
 
 .social li{
 
@@ -587,15 +610,19 @@ a:active {
 }
 
 .icon {
-
-	color:#FFF;
-	text-shadow:1px 1px 1px #b3b3b3;
-}
+	color: #19B97F;
+	transform: scale(1);
+	transition: all 0.5s ease;
+	display:inline-block;
+	}
 
 .icon:hover {
-	color:#68BFB3;
-	text-shadow:none;
-
+	color:#00B9F2;
+	transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
 }
 
 
@@ -603,10 +630,13 @@ a:active {
 ----------------------------------------------- */
 
 .main-navigation {
-    clear: both;
-    display: block;
-    padding: 6em 0 1em 3.5em;
-    width:100%;
+    /* clear: both; */
+    /* float: left; */
+    display: inline-block;
+    width: 228px;
+    padding: 5px 0 0 60px;
+    position: absolute;
+    bottom: 10px;
 }
 .main-navigation:after {
 	clear: both;
@@ -624,19 +654,17 @@ a:active {
 	position: relative;
 }
 .main-navigation a {
-	color: #68BFB3;
-    display: block;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-right: 2em;
-    text-decoration: none;
-    height:100%;
+	color: #19B97F;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-right: 2em;
+	text-decoration: none;
+	height:100%;
 }
 
 .main-navigation ul ul {
-	/*background-image: url("http://joelps.com/arthurenglish/wp-content/themes/Arthur/images/ricepaper_v3.png");*/
-	background: #efe7e3;
-	/* border: 1px solid rgba( 0, 0, 0, 0.1 ); */
+	background: #fff;
 	display: none;
 	float: left;
 	position: absolute;
@@ -644,7 +672,6 @@ a:active {
 	left: 0;
 	z-index: 99999;
 	box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
-	background-repeat: repeat;
 }
 
 .main-navigation ul ul ul {
@@ -661,7 +688,7 @@ a:active {
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a,
 .main-navigation ul ul a:hover {
-	color: #45827A;
+	color: #00B9F2;
 }
 .main-navigation ul ul :hover > a {
 }
@@ -681,18 +708,21 @@ a:active {
 .menu-toggle {
 	margin:0;
 	color: #7c948a;
-   	cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom:30px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 12px;
+	padding-bottom: 8px;
+	/* height: auto; */
+	background: #fff;
+	box-shadow: 2px -7px 9px 6px #AFAFAF;
 }
 
 .main-small-navigation .menu {
 	display: none;
 	list-style-type: none;
-	background-color: #BFC1E8;
+	background-color: #78cfea;
 	text-align: center;
 	width: 100%;
 	padding: 0px;
@@ -712,15 +742,14 @@ a:active {
 }
 
 .main-small-navigation .menu ul {
-
-	background-color: #DCDEFD;
+	background-color: #61bdd9;
 	text-align:center;
 	width: 100%;
 	margin:0;
 	padding:20px 0 20px 0;
 	list-style-type: none;
-	box-shadow: 2px 13px 18px -17px #9A9A9A inset;
-}
+	box-shadow: 2px 13px 18px -17px #006584 inset;
+	}
 
 .main-small-navigation .menu li{
 	padding:8px;
@@ -730,9 +759,7 @@ a:active {
 .main-small-navigation li:hover > a,
 .main-small-navigation li.current_page_item a, 
 .main-small-navigation li.current-menu-item a,
-.main-small-navigation ul ul a:hover {
-
-	color: #A69FB3;
+.main-small-navigation ul ul a:hover {color: #FFFFFF;
 /* background-color: blue; */list-style-type: none;}
 
 
@@ -767,7 +794,7 @@ a:active {
     border-radius: 10px;
     padding: 20px;
     margin: 0 20px 20px 20px;
-    background-image: url("http://www.kevinsenglishhouse.com/images/img07.jpg");
+    background-image: url("http://cdn4.goabroad.com/images/a/top/3157065af9610b38cde54b5ae25b0fcc30d16b82-2014.jpg");
     background-size:cover;
     color: #FFF;
     box-shadow: 10px 10px 50px 130px rgba(0,0,0,0.3) inset;
@@ -789,7 +816,7 @@ a:active {
 	border-radius: 10px;
     padding: 20px;
     margin: 0 20px 20px 20px;
-    background-image: url("http://www.hillstanbul.com/wp-content/uploads/2015/02/woman-with-headset.jpg");
+    background-image: url("https://imageserv10.team-logic.com/mediaLibrary/240/lgOperator_-_customer_service.jpg");
     background-size:cover;
     color: #FFF;
     box-shadow: 10px 10px 50px 130px rgba(0,0,0,0.3) inset;
@@ -802,17 +829,41 @@ a:active {
 }
 .entry-title,
 .page-title {
-	font-size: 28px;
-    font-size: 2.8rem;
-	/*	font-style: italic;*/
-	margin: 0 0 0.2em;
-	font-family: 'Kreon', serif;
-	font-weight: 700;
+    font-size: 3rem;
+    /* font-style: italic; */
+    margin: 0 auto;
+    font-family: 'Abel', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    z-index:2;
+    color:#00B9F2;
+    background-color:#FFF;
+    display: inline-block;
+    padding: 0 10px 0 10px;
 }
 
 .entry-title a {
 	text-decoration: none;
+	text-align: center;
+	color:#00B9F2;
 }
+
+.entry-header{
+	height:60px;
+}
+
+.entry-header::after {
+	content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: #00B9F2;
+    position: relative;
+    margin-top: -25px;
+    z-index: 0;
+}
+
 body.search .page-title,
 body.archive .page-title {
   	font-size: 16px;
@@ -867,11 +918,20 @@ body.archive .page-title {
 }
 
 
+/* =Footer
+----------------------------------------------- */
+.site-footer {
+
+	width: 100%;
+	color:#FFF;
+}
+
+
 /* =Aside Post Format
 ----------------------------------------------- */
 
 .format-aside .entry-content {
-	border-left: 4px solid rgba( 0, 0, 0, 0.1 );
+	/*border-left: 4px solid rgba( 0, 0, 0, 0.1 );*/
 	padding-left: 1em;
 }
 
@@ -906,8 +966,9 @@ img[class*="wp-image-"],
 .entry-content img,
 .widget img,
 img.size-full {
-	max-width: 100%;
+	/*max-width: 100%;*/
 	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+	height:100%;
 }
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -1128,11 +1189,16 @@ p.nocomments {
 	text-align: center;
 }
 
+.site-info a{
+
+	color: #FFF;
+}
+
 
 /* =Responsive Structures
 ----------------------------------------------- */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
 	#main {
 		overflow: visible;
@@ -1141,9 +1207,9 @@ p.nocomments {
 	#primary,
 	#secondary,
 	#tertiary {
-		background: none;
-		float: none;
-		margin: 0;
+		background: #FFF;
+		/* float: none; */
+		margin: 40px 0 0 0;
 		padding: 0;
 	}
 	#primary,
@@ -1180,7 +1246,10 @@ p.nocomments {
     margin: 0 auto;
     height: 24px;
     padding: 0;
-	background-color: rgba(201,201,201,.4);height: 100%;position: static;/* top: 26px; */
+	/*background-color: rgba(201,201,201,.4);*/
+	background-color: #fff;
+	height: 100%;
+	position: static;/* top: 26px; */
 	float: none;
 	}
 
@@ -1193,11 +1262,25 @@ p.nocomments {
 	}
 
 	.main-navigation {
-
-		padding-top: 6em;
+		/*padding-top: 2em;
+		height: 120px;*/
 	}
-	.menu-toggle{
-		    padding-top: 180px;
+
+	/*.menu-toggle {
+		        margin: 0;
+		        color: #7c948a;
+		        cursor: pointer;
+		        font-size: 20px;
+		        font-weight: bold;
+		        text-align: center;
+		        padding-top: 10px;
+		        padding-bottom: 10px;
+		        background-color: #FFF;
+		        box-shadow: 0px 2px 8px 0 rgba(0,0,0,.2);
+	}*/
+
+	.metaslider {
+	padding-top: 135px;
 	}
 
 }
@@ -1213,5 +1296,28 @@ p.nocomments {
 #ie8 .widget img,
 #ie8 .wp-caption img {
 	width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+}
+
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */
+#ie9 img[src*=".svg"] {
+  width: 100%; 
+}
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%; 
+  }
+}
+
+.mark img {
+	height:100%; /*KEEPS SCALE IN IE 11*/
+	width:auto%; /*KEEPS SCALE IN IE 11*/
+	display:inline-block; /*KEEPS SCALE IN IE 11*/
 }
 

@@ -41,6 +41,7 @@
 
 	<!-- GOOGLE FONTS -->
 	<link href='https://fonts.googleapis.com/css?family=Bree+Serif|Patua+One|Ultra|Maiden+Orange|Kreon:400,300,700|' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Abel' rel='stylesheet' type='text/css'>
 	<!-- GOOGLE FONTS END -->
 	
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -57,12 +58,12 @@
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<!-- <div id="mark">mark</div> -->	
 			<h1 class="site-title">
-				<img class="mark" src="/arthurenglish/wp-content/themes/Arthur/images/arthurLOGOMARK2_FINAL.svg") no-repeat>
+				<a href="<?php echo home_url( '/' ); ?>"><img class="mark" src="/arthurenglish/wp-content/themes/Arthur/images/arthurcrown.svg") no-repeat></a>
 				<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+			
 
 			<ul class="social">
 				<li><a href="mailto:info@nihon-arthur.com"><span class="icon"><?php echo do_shortcode("[wp-svg-icons icon=mail-4 wrap=span]"); ?></span></a></li>
@@ -70,6 +71,13 @@
 				<li><a href="https://www.twitter.com"><span class="icon"><?php echo do_shortcode("[wp-svg-icons icon=twitter-3 wrap=span]"); ?></span></a></li>
 			</ul>
 
+
+			<nav role="navigation" class="site-navigation main-navigation">
+				<h1 class="assistive-text"><?php _e( 'Menu', 'shape' ); ?></h1>
+				<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'shape' ); ?>"><?php _e( 'Skip to content', 'shape' ); ?></a></div>
+
+				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+			</nav><!-- .site-navigation .main-navigation -->
 		</hgroup>
 
 		<?php $header_image = get_header_image();
@@ -79,12 +87,7 @@
 			</a>
 		<?php } // if ( ! empty( $header_image ) ) ?>
 
-		<nav role="navigation" class="site-navigation main-navigation">
-			<h1 class="assistive-text"><?php _e( 'Menu', 'shape' ); ?></h1>
-			<div class="assistive-text skip-link"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'shape' ); ?>"><?php _e( 'Skip to content', 'shape' ); ?></a></div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- .site-navigation .main-navigation -->
+		
 	</header><!-- #masthead .site-header -->
 
 <!-- 	METASLIDER -->

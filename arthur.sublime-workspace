@@ -4,12 +4,112 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"pag",
+				"page-title"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"magin",
+				"margin-top"
+			],
+			[
+				"tet",
+				"text-decoration"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"visi",
+				"visited"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"menu",
+				"menu-toggle"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
 				"font",
 				"font-weight"
 			],
 			[
-				"text",
-				"text-decoration"
+				"bor",
+				"border-radius"
+			],
+			[
+				"color",
+				"background-color"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"site",
+				"site-title"
+			],
+			[
+				"rgb",
+				"rgba()"
+			],
+			[
+				"padin",
+				"padding-top"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"sa",
+				"sans-serif"
 			],
 			[
 				"m",
@@ -18,10 +118,6 @@
 			[
 				"backgroun",
 				"background-color"
-			],
-			[
-				"padding",
-				"padding-left"
 			],
 			[
 				"fon",
@@ -48,16 +144,8 @@
 				"min-width"
 			],
 			[
-				"margin-",
-				"margin-bottom"
-			],
-			[
 				"padding-",
 				"padding-bottom"
-			],
-			[
-				"list",
-				"list-style-type"
 			],
 			[
 				"al",
@@ -76,18 +164,29 @@
 			}
 		},
 		{
-			"file": "style.css",
+			"contents": "<?php\n/**\n * The Header for our theme.\n *\n * Displays all of the <head> section and everything up till <div id=\"main\">\n *\n * @package Shape\n * @since Shape 2.0\n */\n?><!DOCTYPE html>\n<!--[if IE 8]>\n<html id=\"ie8\" <?php language_attributes(); ?>>\n<![endif]-->\n<!--[if !(IE 8) ]><!-->\n<html <?php language_attributes(); ?>>\n<!--<![endif]-->\n<head>\n<meta charset=\"<?php bloginfo( 'charset' ); ?>\" />\n<meta name=\"viewport\" content=\"width=device-width\" />\n<title><?php\n	/*\n	 * Print the <title> tag based on what is being viewed.\n	 */\n	global $page, $paged;\n\n	wp_title( '|', true, 'right' );\n\n	// Add the blog name.\n	bloginfo( 'name' );\n\n	// Add the blog description for the home/front page.\n	$site_description = get_bloginfo( 'description', 'display' );\n	if ( $site_description && ( is_home() || is_front_page() ) )\n		echo \" | $site_description\";\n\n	// Add a page number if necessary:\n	if ( $paged >= 2 || $page >= 2 )\n		echo ' | ' . sprintf( __( 'Page %s', 'shape' ), max( $paged, $page ) );\n\n	?></title>\n\n	<!-- GOOGLE FONTS -->\n	<link href='https://fonts.googleapis.com/css?family=Bree+Serif|Patua+One|Ultra|Maiden+Orange|Kreon:400,300,700|' rel='stylesheet' type='text/css'>\n	<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Abel' rel='stylesheet' type='text/css'>\n	<!-- GOOGLE FONTS END -->\n	\n<link rel=\"profile\" href=\"http://gmpg.org/xfn/11\" />\n<link rel=\"pingback\" href=\"<?php bloginfo( 'pingback_url' ); ?>\" />\n<!--[if lt IE 9]>\n<script src=\"<?php echo get_template_directory_uri(); ?>/js/html5.js\" type=\"text/javascript\"></script>\n<![endif]-->\n\n<?php wp_head(); ?>\n</head>\n\n<body <?php body_class(); ?>>\n<div id=\"page\" class=\"hfeed site\">\n	<?php do_action( 'before' ); ?>\n	<header id=\"masthead\" class=\"site-header\" role=\"banner\">\n		<hgroup>\n			<h1 class=\"site-title\">\n				\n				<a href=\"<?php echo home_url( '/' ); ?>\" title=\"<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>\" rel=\"home\"><img class=\"mark\" src=\"/arthurenglish/wp-content/themes/Arthur/images/arthurcrown.svg\") no-repeat><?php bloginfo( 'name' ); ?></a>\n				<h2 class=\"site-description\"><?php bloginfo( 'description' ); ?></h2>\n			</h1>\n			\n\n			<ul class=\"social\">\n				<li><a href=\"mailto:info@nihon-arthur.com\"><span class=\"icon\"><?php echo do_shortcode(\"[wp-svg-icons icon=mail-4 wrap=span]\"); ?></span></a></li>\n				<li><a href=\"https://www.facebook.com/arthur.cskysh\"><span class=\"icon\"><?php echo do_shortcode(\"[wp-svg-icons icon=facebook-3 wrap=span]\"); ?></span></a></li>\n				<li><a href=\"https://www.twitter.com\"><span class=\"icon\"><?php echo do_shortcode(\"[wp-svg-icons icon=twitter-3 wrap=span]\"); ?></span></a></li>\n			</ul>\n\n\n			<nav role=\"navigation\" class=\"site-navigation main-navigation\">\n				<h1 class=\"assistive-text\"><?php _e( 'Menu', 'shape' ); ?></h1>\n				<div class=\"assistive-text skip-link\"><a href=\"#content\" title=\"<?php esc_attr_e( 'Skip to content', 'shape' ); ?>\"><?php _e( 'Skip to content', 'shape' ); ?></a></div>\n\n				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>\n			</nav><!-- .site-navigation .main-navigation -->\n		</hgroup>\n\n		<?php $header_image = get_header_image();\n		if ( ! empty( $header_image ) ) { ?>\n			<a href=\"<?php echo esc_url( home_url( '/' ) ); ?>\" title=\"<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>\" rel=\"home\">\n				<img src=\"<?php header_image(); ?>\" width=\"<?php echo get_custom_header()->width; ?>\" height=\"<?php echo get_custom_header()->height; ?>\" alt=\"\" />\n			</a>\n		<?php } // if ( ! empty( $header_image ) ) ?>\n\n		\n	</header><!-- #masthead .site-header -->\n\n<!-- 	METASLIDER -->\n\n    \n    <?php \n    echo do_shortcode(\"[metaslider id=6 restrict_to=home]\");?>\n\n	<div id=\"main\" class=\"site-main\">\n\n\n",
+			"file": "header.php",
+			"file_size": 3699,
+			"file_write_time": 1453080923000000,
 			"settings":
 			{
-				"buffer_size": 19201,
+				"buffer_size": 3684,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "header.php",
+			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 3082,
+				"buffer_size": 25897,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 1353,
 				"line_ending": "Unix"
 			}
 		},
@@ -95,7 +194,23 @@
 			"file": "footer.php",
 			"settings":
 			{
-				"buffer_size": 853,
+				"buffer_size": 870,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 4182,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/small-menu.js",
+			"settings":
+			{
+				"buffer_size": 1254,
 				"line_ending": "Unix"
 			}
 		}
@@ -128,9 +243,9 @@
 	},
 	"file_history":
 	[
+		"/Users/Joel/Desktop/Projects/Arthur/style.css",
 		"/Users/Joel/Desktop/Projects/Arthur/footer.php",
 		"/Users/Joel/Desktop/Projects/Arthur/header.php",
-		"/Users/Joel/Desktop/Projects/Arthur/style.css",
 		"/Users/Joel/Library/Application Support/Sublime Text 2/Packages/User/sftp_servers/joelArthurFTP",
 		"/Users/Joel/Desktop/Projects/Arthur3/header.php",
 		"/Users/Joel/Desktop/plugin.php",
@@ -214,6 +329,7 @@
 		"height": 0.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -221,6 +337,69 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"small",
+			"width",
+			"#workwrap",
+			"#workwrap h1",
+			"workwrap",
+			"sub-menu",
+			"calendar",
+			"10px",
+			".entry-header",
+			"custom-background",
+			"sub",
+			"footer",
+			"FFF",
+			"site-footer",
+			"goto line",
+			"3797",
+			"©3797",
+			"slider",
+			"colophon",
+			"slider",
+			"meta",
+			"rotate(-2deg)",
+			"mark",
+			"hover",
+			".mark",
+			"mark",
+			".mark",
+			"mark",
+			"hover",
+			";\n",
+			"img",
+			".menu-toggle",
+			"@med",
+			"@media",
+			"h1",
+			"<a href=\"http://joelps.com/arthurenglish/?cat=7\">Classes</a>",
+			"sub-men",
+			"sub-menu",
+			"sub-m",
+			"paper",
+			"p {",
+			"hgroup",
+			".site-description",
+			"sub-menu",
+			"sub",
+			"http",
+			"aside",
+			"339966",
+			"#339966",
+			"A0A0A0",
+			"AOAOAO",
+			".social {\n\n	float: right;\n	display: inline-block;\n	list-style-type: none;\n	width: 100%;\n	height:100px;\n	font-size: 1em;\n}\n\n.social li{\n\n	float: right;\n	display: inline-block;\n	list-style-type: none;\n	width: 100%;\n	height:100px;\n	font-size: 2em;\ncolor: #FFF;}",
+			"do_sortcode",
+			"add_filter( 'widget_text', 'shortcode_unautop');",
+			"add_filter( 'widget_text'",
+			"arthur",
+			"by",
+			"site-info",
+			".site-footer",
+			"h1",
+			"sub-menu",
+			"navigation a",
+			"sub-menu",
 			"box-shadow",
 			"current_page_item",
 			"menu",
@@ -285,31 +464,7 @@
 			"44",
 			"col-lg-2",
 			"@media",
-			"footerwrap",
-			"@",
-			"wrapper-parallax",
-			"300",
-			".container",
-			"250",
-			".content",
-			"footer",
-			"@media footer",
-			".navbar-toggle",
-			"@media",
-			"footer",
-			"col-lg-6 col-lg-offset-3",
-			"col-lg-2",
-			"col-lg-2col-lg-6 col-lg-offset-3",
-			"col-lg-2",
-			"16.66666667%",
-			"col-lg-2",
-			".col-lg-2",
-			"24.666667",
-			"row",
-			"row centered",
-			".i",
-			"a {",
-			"row center"
+			"footerwrap"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -327,7 +482,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -342,8 +497,8 @@
 						"selection":
 						[
 							[
-								496,
-								528
+								440,
+								193
 							]
 						],
 						"settings":
@@ -356,25 +511,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 8.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "style.css",
+					"file": "header.php",
 					"settings":
 					{
-						"buffer_size": 19201,
+						"buffer_size": 3684,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19201,
-								19201
+								3057,
+								3057
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 58.0,
+						"translation.y": 1178.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 25897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24296,
+								24296
 							]
 						],
 						"settings":
@@ -386,25 +571,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 20772.0,
+						"translation.y": 10180.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "header.php",
+					"buffer": 3,
+					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 3082,
+						"buffer_size": 1353,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1983,
-								1983
+								491,
+								494
 							]
 						],
 						"settings":
@@ -416,25 +601,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1145.0,
+						"translation.y": 262.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "footer.php",
 					"settings":
 					{
-						"buffer_size": 853,
+						"buffer_size": 870,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								698,
-								698
+								266,
+								266
 							]
 						],
 						"settings":
@@ -445,7 +630,67 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 4.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 4182,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3539,
+								3544
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 200.0,
+						"translation.y": 2408.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "js/small-menu.js",
+					"settings":
+					{
+						"buffer_size": 1254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
